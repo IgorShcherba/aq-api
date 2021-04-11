@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rooms",
+  "info": {
+    "name": "Room",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "area": {
+      "type": "decimal"
+    },
+    "has_kitchen": {
+      "type": "boolean",
+      "default": false
+    },
+    "badrooms": {
+      "type": "integer"
+    },
+    "room_gallery": {
+      "model": "room-gallery",
+      "via": "room"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/room-galleries",
+      "handler": "room-gallery.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/room-galleries/count",
+      "handler": "room-gallery.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/room-galleries/:id",
+      "handler": "room-gallery.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/room-galleries",
+      "handler": "room-gallery.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/room-galleries/:id",
+      "handler": "room-gallery.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/room-galleries/:id",
+      "handler": "room-gallery.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

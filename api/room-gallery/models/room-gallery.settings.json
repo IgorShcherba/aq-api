@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "room_galleries",
+  "info": {
+    "name": "Room gallery"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "room": {
+      "via": "room_gallery",
+      "model": "room"
+    }
+  }
+}
