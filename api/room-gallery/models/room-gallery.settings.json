@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "room_galleries",
   "info": {
-    "name": "Room gallery"
+    "name": "Room gallery",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -22,9 +23,9 @@
       "plugin": "upload",
       "required": false
     },
-    "room": {
+    "rooms": {
       "via": "room_gallery",
-      "model": "room"
+      "collection": "room"
     }
   }
 }

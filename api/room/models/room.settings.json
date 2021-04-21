@@ -29,7 +29,10 @@
     },
     "room_gallery": {
       "model": "room-gallery",
-      "via": "room"
+      "via": "rooms"
+    },
+    "sub_title": {
+      "type": "string"
     }
   }
 }
