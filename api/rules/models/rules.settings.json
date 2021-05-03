@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "rules",
+  "info": {
+    "name": " Rules",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "rules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.pravilo-doma"
+    }
+  }
+}
