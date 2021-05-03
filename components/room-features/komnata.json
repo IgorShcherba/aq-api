@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_room_features_komnata",
+  "info": {
+    "name": "Комната",
+    "icon": "layer-group"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sleeping": {
+      "type": "component",
+      "repeatable": true,
+      "component": "room-features.spalnoe-mesto"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "sleeping_place",
+  "info": {
+    "name": "Спальное место",
+    "icon": "bed"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "b_width": {
+      "type": "integer"
+    },
+    "b_length": {
+      "type": "integer"
+    }
+  }
+}

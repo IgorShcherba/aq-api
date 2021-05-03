@@ -33,6 +33,29 @@
     },
     "sub_title": {
       "type": "string"
+    },
+    "bathrooms": {
+      "default": 1,
+      "type": "integer"
+    },
+    "guests": {
+      "type": "integer"
+    },
+    "number_of_rooms": {
+      "type": "integer"
+    },
+    "floor": {
+      "type": "integer"
+    },
+    "apartment": {
+      "type": "component",
+      "repeatable": true,
+      "component": "room-features.komnata"
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "room-features.udobstva"
     }
   }
 }
