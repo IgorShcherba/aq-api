@@ -1,7 +1,8 @@
 const axios = require("axios");
 
-const RECAPTCHA_SECRET = "6LcPW8saAAAAAAndNM1Sxgye-ShXbF_5ONnaDw7F";
+const RECAPTCHA_SECRET = process.env.RECAPTCHA_SECRET;
 const RECAPTCHA_MIN_SCORE = 0.5;
+
 const verifyToken = async (token) => {
   try {
     const response = await axios.post(
@@ -12,6 +13,7 @@ const verifyToken = async (token) => {
     console.log("recaptcha verify error", error);
   }
 };
+
 module.exports = async (ctx, next) => {
   const token = ctx.request.body?.token;
 
